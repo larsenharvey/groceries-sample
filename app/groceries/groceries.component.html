@@ -1,3 +1,5 @@
+
+
 <GridLayout #container
   rows="auto, auto, *">
 
@@ -5,11 +7,11 @@
   <GridLayout
     row="0"
     columns="44, *, auto"
-    class="action-bar-custom">
-    <Label
-      col="1"
-      text="Groceries"></Label>
-    
+    class="action-bar-custom"
+    (tap)="toggleTheMenu()">
+
+          <Label text="Menu"></Label>
+
     <!-- Wrap the image in a StackLayout to give it a bigger tap target -->
     <StackLayout
       col="2"

@@ -13,7 +13,6 @@ import { ItemStatusPipe } from "./grocery-list/item-status.pipe";
     groceriesRouting
   ],
   declarations: [
-    GroceriesComponent,
     GroceryListComponent,
     ItemStatusPipe
   ],

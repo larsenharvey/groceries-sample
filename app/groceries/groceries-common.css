@@ -1,19 +1,9 @@
 .action-bar-custom {
-  color: white;
-  margin-top: 26;
-  margin-bottom: 16;
+  color: blue;
+
 }
-.action-bar-custom Label {
-  font-size: 21;
-  font-weight: bold;
-}
-.action-bar-custom StackLayout {
-  height: 40;
-  padding-left: 15;
-  padding-right: 15;
-  vertical-align: center;
-  horizontal-align: center;
-}
+
+
 
 .add-bar {
   background-color: #CB1D00;
@@ -58,4 +48,8 @@ TextField {
 ActivityIndicator {
   horizontal-align: center;
   vertical-align: center;
+}
+ActionBar {
+  background-color: #3C5AFD;
+  color: black;
 }

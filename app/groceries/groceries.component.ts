@@ -5,10 +5,11 @@ import { Color } from "color";
 import { Page } from "ui/page";
 import { TextField } from "ui/text-field";
 import * as SocialShare from "nativescript-social-share";
-
 import { GroceryListComponent } from "./grocery-list/grocery-list.component";
 import { GroceryService } from "./shared";
 import { LoginService, alert } from "../shared";
+import { MenuComponent } from "../shared/menu/menu.component";
+
 
 @Component({
   selector: "gr-groceries",
@@ -28,7 +29,7 @@ export class GroceriesComponent implements OnInit {
   constructor(private router: Router,
     private store: GroceryService,
     private loginService: LoginService,
-    private page: Page) {}
+    private page: Page, private menuComponent: MenuComponent) {}
 
   ngOnInit() {
     this.isAndroid = !!this.page.android;
@@ -139,4 +140,8 @@ export class GroceriesComponent implements OnInit {
     this.loginService.logoff();
     this.router.navigate(["/login"]);
   }
+
+    toggleTheMenu(): void {
+        this.menuComponent.toggleMenu();
+    }
 }
